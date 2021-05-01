@@ -1,0 +1,63 @@
+
+body {
+    font-family: 'Montserrat';
+    padding: 5%;
+    background-color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#name {
+    font-size: 500%
+}
+
+#hello {
+    padding-top: 5%;
+    font-size: 200%
+}
+
+#intro {
+    padding-right: 40%;
+    font-size: 125%
+}
+
+.projects {
+    padding-top: 10%;
+}
+#projects-title {
+    font-size: 300%
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    margin-top: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 30%;
+    height: 22em;
+    transition: 0.3s;
+    align-items: center;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.02);
+  }
+  
+.container {
+    padding: 2% 7.5%;
+}
+
+/* #description {
+    justify-content: center;
+} */
+
+@font-face {
+     font-family: 'Montserrat';
+     src: url(../fonts/Montserrat-Regular.ttf);
+     font-style: normal;
+     font-weight: 100;
+ }
