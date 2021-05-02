@@ -51,9 +51,26 @@ body {
     padding: 2% 7.5%;
 }
 
-/* #description {
-    justify-content: center;
-} */
+@media (max-width:600px) {
+    body {
+        font-family: 'Montserrat';
+        padding: 5%;
+        background-color: white;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    #hello {
+        padding-top: 40%;
+        font-size: 200%
+    }
+    #intro {
+        padding-right: 5%;
+        font-size: 60%
+    }
+    .projects-container {
+        display: flex;
+    }
+}
 
 @font-face {
      font-family: 'Montserrat';
