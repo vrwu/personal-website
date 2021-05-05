@@ -1,5 +1,29 @@
+.topnav {
+    background-color: #e4daf2;
+    height: 4em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.topnav a {
+    float: right;
+    padding-left: 1%;
+    padding-right: 1%;
+    line-height: 4em;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 body {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
+    margin: 0%;
+}
+.main-body {
     padding: 5%;
     background-color: white;
     padding-left: 20%;
@@ -11,7 +35,7 @@ body {
 }
 
 #hello {
-    padding-top: 5%;
+    padding-top: 10%;
     font-size: 200%
 }
 
@@ -52,6 +76,10 @@ body {
 
 @media only screen and (max-width:600px) {
     body {
+        font-family: "Montserrat";
+    }
+    
+    .main-body {
         font-family: 'Montserrat';
         padding: 5%;
         background-color: white;
