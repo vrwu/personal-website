@@ -81,7 +81,11 @@ body {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transform: scale(1.02);
-  }
+}
+
+.card:active {
+    transform: translateY(4px);
+}
   
 #description {
     padding: 2% 7.5%;
