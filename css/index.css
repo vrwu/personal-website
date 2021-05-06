@@ -23,6 +23,9 @@ a:visited {
     line-height: 4em;
     color: none;
 }
+hr {
+    margin: 0%;
+}
 
 body {
     font-family: "Montserrat";
@@ -36,7 +39,8 @@ body {
 }
 
 #name {
-    font-size: 500%
+    font-size: 500%;
+    padding-bottom: 2.5%
 }
 
 #hello {
@@ -45,6 +49,7 @@ body {
 }
 
 #intro {
+    padding-top: 2.5%;
     padding-right: 40%;
     font-size: 125%
 }

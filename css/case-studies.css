@@ -9,7 +9,10 @@ a:visited {
 }
 
 .topnav {
-    background-color: #e4daf2;
+    background-color: #fffefa;
+    border-bottom-color: #d9d9d9;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1em;
     height: 4em;
     position: fixed;
     width: 100%;
