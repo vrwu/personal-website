@@ -1,3 +1,13 @@
+a:link {
+    text-decoration: none;
+    color: black
+  }
+  
+a:visited {
+    text-decoration: none;
+    color: black
+}
+
 .topnav {
     background-color: #e4daf2;
     height: 4em;
@@ -11,12 +21,7 @@
     padding-left: 1%;
     padding-right: 1%;
     line-height: 4em;
-}
-
-ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
+    color: none;
 }
 
 body {

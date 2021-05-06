@@ -1,14 +1,139 @@
 <!doctype html>
 
 <html>
+
 <head>
-	<title>Save Our Women</title>
-	<link href="css/sow.css" rel="stylesheet">
+    <title>Save Our Women</title>
+    <link href="css/case-studies.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <div>
-        hello - to be filled
+        <div class="topnav">
+            <a href="#random">random</a>
+            <a href="#projects">projects</a>
+            <a href="#experience">experience</a>
+            <a href="#about">about me</a>
+            <a href="index.html" style="float:left">home</a>
+        </div>
+        <div class="main-body">
+            <div class="body-center">
+                <div id="title">
+                    save our women
+                </div>
+                <hr size="10" width="25%%" color="#e4daf2">
+
+                <div id="problem-statement">Whether it be taking a walk, jogging, or going out to buy groceries,
+                    women often find themselves in situations where they have to be extra cautious of their
+                    surroundings.
+                </div>
+
+                <div id="section-title">Background</div>
+                <div id="section-paragraph">With the rise of sex trafficking and and kidnappings around the world, women
+                    have resorted
+                    to purchasing self protection items such as pepper spray, tasers, and alarms as means to keep
+                    themselves safe
+                    in fear of being victims to these horrendous acts. Although other apps to fight this include
+                    features
+                    like emergency contacts, police calls, there’s no one app that includes everything that a woman
+                    needs to stay safe,
+                    including awareness spreading and a section for tips. <br><br>
+                    While walking my dog in broad daylight, I find myself extra cautious with my surroundings, looking
+                    behind me
+                    every now and then to make sure no one’s following me. I even get startled by a car pulling over
+                    near me. Although I have pepper
+                    spray, I find the need for more items to keep myself safe. On social media, several other women have
+                    voiced
+                    their experiences surrounding this topic, thus leading me to want something that encompassed
+                    everything that
+                    pertained to women safety and that could connect us and our contacts.
+                </div>
+
+                <div id="section-title">Solution</div>
+                <div id="italic-heading">Save Our Women - a Women's Safety App (iOS and Android)</div>
+                <div id="section-paragraph">Inspired by recent events and increased media presence on women safety, this
+                    iOS app aims to
+                    promote the safety of women through awareness and action. <br><br>
+                    <b>Features:</b> <br>
+                    <ul>
+                        <li><i><b>Emergency SOS Messaging and Location Tracking to Emergency Contacts</b></i> - with the
+                            tap of a button,
+                            send Emergency SOS messages to your Emergency Contacts with your location</li> <br>
+                        <li><i><b>Creation of Incident Reports</b></i> - create reports by pinpointing the location and
+                            description of an incident
+                            and share to others on the platform</li> <br>
+                        <li><i><b>Live Map of Incidents</b></i> - integrated maps with pinpoint locations and incident
+                            hotspots/clusters</li> <br>
+                        <li><i><b>Scenario Based Audios and Tips</b></i> - spread awareness and tips to ensure other
+                            women
+                            are well informed of recent issues and how they can keep themselves safe</li>
+                    </ul>
+                </div>
+
+                <div id="section-title">User Research/Needfinding</div>
+                <img src="images/info.png" alt="save our women" style="width:75%" id="info-pic">
+                <div id="section-paragraph">These statistics derive from the 2019 data report for the U.S National Human
+                    Trafficking Hotline. As we understand that this
+                    does not encompass the entirety of trafficking cases, the large numbers allowed us to judge that
+                    this was an issue that needed to be addressed.<br><br><br>
+                </div>
+                <img src="images/sdawareness.png" alt="save our women" style="width:75%" id="info-pic">
+                <div id="section-paragraph"> <br> Further, through investigating local social media pages like <a
+                        href="https://www.instagram.com/sd_awareness/" target="_blank"><b>@sdawareness</b></a> on
+                    Instgram,
+                    we found that there was a lot of attention on the topic but stayed central to just self reflected
+                    stories. This made us want to build an app that encompassed various topics
+                    pertaining to spreading awareness, tips, and safety.
+                </div>
+                <img src="images/apps.jpg" alt="save our women" style="width:60%" id="info-pic">
+                <div id="section-paragraph"> <br> We also investigated other apps related to safety and found
+                    <a href="https://play.google.com/store/apps/details?id=com.aksharatips.womansafety&hl=en_US&gl=US"
+                        target="_blank"><b>Indian SOS Women Safety</b></a>
+                    and <a href="https://apps.apple.com/us/app/sister/id1481562340" target="_blank"><b>Sister</b></a>,
+                    both of which had similar features. We used these two apps to draw inspiration from
+                    but also refine and bring uniqueness to our app.
+                </div>
+
+                <div id="section-title">UI Design</div>
+                <div id="section-paragraph">We used Figma to design our app's UI. Starting with the Mockup, we gauged
+                    what elements we wanted on our screens and refined that to our Final.</div>
+                <div id="italic-heading">Mockup</div>
+                <img src="images/sow_mockup.png" alt="save our women" style="width:100%" id="info-pic">
+                <div id="italic-heading">Final</div>
+                <img src="images/sow_final.png" alt="save our women" style="width:100%" id="info-pic">
+
+                <div id="section-title">Programming</div>
+                <div id="section-paragraph">For our front end, we used React Native and Google Places and Maps API. We
+                    connected the front and back end through Axios.<br><br>
+                    I focused more on the back end, leveraging Python Flask as our back end server and Google Firebase
+                    as our database and authentication. I further implemented the Emergency
+                    SOS contact messaging through Twilio API and built Docker containers to allow front end to run the
+                    back end.
+                </div>
+
+                <div id="section-title">Reflection</div>
+                <div id="section-paragraph">Throughout this entire process, I learned to build an MVP given a 10 week
+                    timeline. It was also my first time engaging in a project,
+                    so I learned many new technologies such as Flask, Firebase, and REST APIs. Since this was conducted
+                    entirely online due to COVID-19, I found it challenging to
+                    communicate with my teammates, however we were able to tackle this through weekly standups and work
+                    sessions. Possible improvements this project could have
+                    expanded on given more time include more extensive user testing to find bugs in our app.
+                </div>
+
+                <div id="section-title">Sources</div>
+                <div id="section-paragraph">
+                    <ul>
+                        <li><a href="https://polarisproject.org/2019-us-national-human-trafficking-hotline-statistics/"
+                                target="_blank">
+                                https://polarisproject.org/2019-us-national-human-trafficking-hotline-statistics/</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
+</html>
