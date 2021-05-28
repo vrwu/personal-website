@@ -100,6 +100,22 @@ hr {
     color: #a029b3;
 }
 
+#highest span{
+    background-color: #b5ebbe;
+}
+
+#medium span {
+    background-color: #ebebb5;
+}
+
+#lowest span {
+    background-color: #ebb5b5;
+}
+
+#github span {
+    background-color: #ebd5b5;
+}
+
 @font-face {
     font-family: 'Montserrat';
     src: url(../fonts/Montserrat-Regular.ttf);

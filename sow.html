@@ -11,21 +11,24 @@
 <body>
     <div>
         <div class="topnav">
-            <a href="#random" id="hyperlink-nav">random</a>
+            <a href="#random" id="hyperlink-nav" style="padding-right: 3%;">random</a>
             <a href="https://vrwu.github.io/#projects" id="hyperlink-nav">projects</a>
             <a href="#experience" id="hyperlink-nav">experience</a>
             <a href="#about" id="hyperlink-nav">about me</a>
-            <a href="https://vrwu.github.io/" style="float:left" id="hyperlink-nav">home</a>
+            <a href="https://vrwu.github.io/" style="float:left; padding-left: 3%;" id="hyperlink-nav">vivian wu</a>
         </div>
         <div class="main-body">
+            
             <div class="body-center">
                 <div id="title">
                     save our women
                 </div>
+
                 <div id="problem-statement" style="padding-top: 0%";>
                     Women in Computing Summer Development Overall Best Project
                 </div>
                 <div id="section-paragraph">
+                    <div style="padding-top: 1%;"></div>
                     <b>Project Date: </b>August 2020
                     <div style="padding-top: 1%;"></div>
                     <b>Technologies: </b>Python Flask, Google Firebase, Twilio API, Google Maps and Places API, Docker
@@ -33,6 +36,11 @@
                     <b>Role: </b>Back End Developer and Database
                     <div style="padding-top: 1%;"></div>
                     <b>Team: </b> Abbie Yip, Vivian Dang, Vivian Wu
+
+                    <!-- <a href="https://github.com/vrwu/save-our-women" target="_blank" id="github" style><b><span>View on Github</span></b></a> -->
+
+                    
+
                 </div>
                 <br>
                 <hr size="10" width="25%%" color="#e2adff">
@@ -85,13 +93,15 @@
                 </div>
 
                 <div id="section-title">User Research/Needfinding</div>
-                <img src="images/info.png" alt="save our women" style="width:75%" id="info-pic">
-                <div id="section-paragraph">These statistics derive from the 2019 data report for the U.S National Human
-                    Trafficking Hotline. As we understand that this
+                <img src="images/info.png" alt="save our women trafficking stats" style="width:75%" id="info-pic">
+                <div id="section-paragraph">These statistics derive from the 2019 data report for the 
+                    <a href="https://polarisproject.org/2019-us-national-human-trafficking-hotline-statistics/" 
+                    target="_blank" id="hyperlink-sow"><b>U.S National Human
+                        Trafficking Hotline</b></a>. As we understand that this
                     does not encompass the entirety of trafficking cases, the large numbers allowed us to judge that
                     this was an issue that needed to be addressed.<br><br><br>
                 </div>
-                <img src="images/sdawareness.png" alt="save our women" style="width:75%" id="info-pic">
+                <img src="images/sdawareness.png" alt="save our women sdawareness" style="width:75%" id="info-pic">
                 <div id="section-paragraph"> <br> Further, through investigating local social media pages like 
                     <a href="https://www.instagram.com/sd_awareness/" target="_blank" id="hyperlink-sow"><b>@sdawareness</b></a> on
                     Instagram,
@@ -99,7 +109,7 @@
                     stories. This made us want to build an app that encompassed various topics
                     pertaining to spreading awareness, tips, and safety.
                 </div>
-                <img src="images/apps.jpg" alt="save our women" style="width:60%" id="info-pic">
+                <img src="images/apps.jpg" alt="save our women similar apps" style="width:60%" id="info-pic">
                 <div id="section-paragraph"> <br> We also investigated other apps related to safety and found
                     <a href="https://play.google.com/store/apps/details?id=com.aksharatips.womansafety&hl=en_US&gl=US"
                         target="_blank" id="hyperlink-sow"><b>Indian SOS Women Safety</b></a>
@@ -110,11 +120,53 @@
                     implemented together in one application.
                 </div>
 
+                <div id="section-title">Use Cases</div>
+                <div id="section-paragraph">After deciding on what core functionalities we wanted in our app, we created a chart of
+                    Use Cases that we wanted users to be able to do with our application. We prioritized our use cases with 
+                    <b id="highest"><span>green as highest priority</span></b>, 
+                    <b id="medium"><span>yellow as medium priority</span></b>, 
+                    and <b id="lowest"><span>red as lowest priority</span></b>. 
+                    This allowed us to set goals toward
+                    finishing what is needed minimally. <br><br>
+                    <b><i>Section 1: Login</i></b>
+                    <ul>
+                        <li id="highest"><span>Users should be able to <b>set up an account</b> with the application</span></li> <br>
+                        <li id="highest"><span>Users should be able to <b>log in and log out</b> of their account</span></li> <br>
+                    </ul>
+                    <b><i>Section 2: Homepage</i></b>
+                    <ul>
+                        <li id="highest"><span>Users should be able to <b>access the homepage</b> from the website</span></li> <br>
+                        <li id="highest"><span>User can <b>opt in to push notifications</b> of reported incidents</span></li> <br>
+                        <li id="highest"><span>User can send <b>SOS emergency alerts</b> and emergency contacts are notified</span></li> <br>
+                        <li id="highest"><span>User can <b>report incidents</b> of harassment in the specific area</span></li> <br>
+                        <li id="highest"><span>User can access other sections through a <b>navigation bar</b></span></li> <br>
+                    </ul>
+                    <b><i>Section 3: Audios/Videos</i></b>
+                    <ul>
+                        <li id="highest"><span>Users should be able to <b>play audios/videos</b> on the app</span></li> <br>
+                        <li id="lowest"><span>Users should be able to <b>save favorites</b> on the app</span></li> <br>
+                        <li id="medium"><span>Users should be able to <b>upload audios/videos</b> on the app</span></li> <br>
+                    </ul>
+                    <b><i>Section 4: User Settings</i></b>
+                    <ul>
+                        <li id="highest"><span>User can put down <b>emergency point of contacts</b></span></li> <br>
+                    </ul>
+                    <b><i>Section 4: Miscellaneous</i></b>
+                    <ul>
+                        <li id="medium"><span>User can view <b>tips for how to stay safe</b> + what to do when you run into a certain situation</span></li> <br>
+                    </ul>
+                    <b><i>Section 5: Reviews/Newsfeed</i></b>
+                    <ul>
+                        <li id="medium"><span>User can view <b>safety of areas</b> they’re currently in</span></li> <br>
+                    </ul>
+
+                </div>             
+
                 <div id="section-title">UI Design</div>
-                <div id="section-paragraph">We used Figma to design our app's UI. Starting with the Mockup, we gauged
+                <div id="section-paragraph">We used <b>Figma</b> to design our app's UI. Starting with the Mockup, we gauged
                     what elements we wanted on our screens and refined that to our Final.</div>
                 <div id="italic-heading">Mockup</div>
-                <img src="images/sow_mockup.png" alt="save our women" style="width:100%" id="info-pic">
+                <img src="images/sow_mockup.png" alt="save our women mockup" style="width:100%" id="info-pic">
 
                 <div id="section-paragraph">
                     Our mockups consisted of several inconsistencies with the home button, navigation bar, and settings 
@@ -126,7 +178,7 @@
                 <br>
 
                 <div id="italic-heading">Final</div>
-                <img src="images/sow_final.png" alt="save our women" style="width:100%" id="info-pic">
+                <img src="images/sow_final.png" alt="save our women final" style="width:100%" id="info-pic">
 
                 <div id="section-title">Screen Descriptions</div>
                 <div id="section-paragraph">
@@ -157,21 +209,22 @@
                 <div id="section-paragraph">
                     Below is a video demonstrating a simple walkthrough of our application and its key features:
                 </div>
-                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/aJXaAHHZl7A" style="margin-top: 1%;">
+                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/aJXaAHHZl7A" style="margin-top: 1%;"
+                alt="save our women demo">
                 </iframe>
 
                 <div id="section-title">Challenges we faced</div>
-                <div id="section-paragraph">Originally, we intended to use Google Maps and Places API in the back end
+                <div id="section-paragraph">Originally, we intended to use <b>Google Maps and Places API</b> in the back end
                     but we found many issues when connecting the front and back end, so we had to move it to be used
                     in the front end. Further, when we designed the app to be iOS, I was unable to test on my end
                     due to having a Windows, so I ended up testing the back end functionality without having access to 
-                    the front end and made basic HTML pages to test. 
+                    the front end and made basic <b>HTML</b> pages to test. 
                 </div>
 
                 <div id="section-title">Reflection</div>
                 <div id="section-paragraph">Throughout this entire process, I learned to build an MVP given a 10 week
                     timeline. It was also my first time engaging in a project,
-                    so I learned many new technologies such as Flask, Firebase, and REST APIs. Since this was conducted
+                    so I learned many new technologies such as <b>Flask, Firebase, and REST APIs</b>. Since this was conducted
                     entirely online due to COVID-19, I found it challenging to
                     communicate with my teammates, however we were able to tackle this through weekly standups and work
                     sessions. Possible improvements this project could have
