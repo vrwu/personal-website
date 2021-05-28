@@ -11,23 +11,36 @@
 <body>
     <div>
         <div class="topnav">
-            <a href="#random">random</a>
-            <a href="#projects">projects</a>
-            <a href="#experience">experience</a>
-            <a href="#about">about me</a>
-            <a href="https://vrwu.github.io/" style="float:left">home</a>
+            <a href="#random" id="hyperlink-nav">random</a>
+            <a href="#projects" id="hyperlink-nav">projects</a>
+            <a href="#experience" id="hyperlink-nav">experience</a>
+            <a href="#about" id="hyperlink-nav">about me</a>
+            <a href="https://vrwu.github.io/" style="float:left" id="hyperlink-nav">home</a>
         </div>
         <div class="main-body">
             <div class="body-center">
                 <div id="title">
                     save our women
                 </div>
+                <div id="problem-statement" style="padding-top: 0%";>
+                    Women in Computing Summer Development Overall Best Project
+                </div>
+                <div id="section-paragraph">
+                    <b>Project Date: </b>August 2020
+                    <div style="padding-top: 1%;"></div>
+                    <b>Technologies: </b>Python Flask, Google Firebase, Twilio API, Google Maps and Places API, Docker
+                    <div style="padding-top: 1%;"></div>
+                    <b>Role: </b>Back End Developer and Database
+                    <div style="padding-top: 1%;"></div>
+                    <b>Team: </b> Abbie Yip, Vivian Dang, Vivian Wu
+                </div>
+                <br>
                 <hr size="10" width="25%%" color="#e2adff">
-
                 <div id="problem-statement">Whether it be taking a walk, jogging, or going out to buy groceries,
                     women often find themselves in situations where they have to be extra cautious of their
                     surroundings.
                 </div>
+
 
                 <div id="section-title">Background</div>
                 <div id="section-paragraph">With the rise of sex trafficking and and kidnappings around the world, women
@@ -79,9 +92,9 @@
                     this was an issue that needed to be addressed.<br><br><br>
                 </div>
                 <img src="images/sdawareness.png" alt="save our women" style="width:75%" id="info-pic">
-                <div id="section-paragraph"> <br> Further, through investigating local social media pages like <a
-                        href="https://www.instagram.com/sd_awareness/" target="_blank"><b>@sdawareness</b></a> on
-                    Instgram,
+                <div id="section-paragraph"> <br> Further, through investigating local social media pages like 
+                    <a href="https://www.instagram.com/sd_awareness/" target="_blank" id="hyperlink-sow"><b>@sdawareness</b></a> on
+                    Instagram,
                     we found that there was a lot of attention on the topic but stayed central to just self reflected
                     stories. This made us want to build an app that encompassed various topics
                     pertaining to spreading awareness, tips, and safety.
@@ -89,10 +102,12 @@
                 <img src="images/apps.jpg" alt="save our women" style="width:60%" id="info-pic">
                 <div id="section-paragraph"> <br> We also investigated other apps related to safety and found
                     <a href="https://play.google.com/store/apps/details?id=com.aksharatips.womansafety&hl=en_US&gl=US"
-                        target="_blank"><b>Indian SOS Women Safety</b></a>
-                    and <a href="https://apps.apple.com/us/app/sister/id1481562340" target="_blank"><b>Sister</b></a>,
+                        target="_blank" id="hyperlink-sow"><b>Indian SOS Women Safety</b></a>
+                    and <a href="https://apps.apple.com/us/app/sister/id1481562340" target="_blank" id="hyperlink-sow"><b>Sister</b></a>,
                     both of which had similar features. We used these two apps to draw inspiration from
-                    but also refine and bring uniqueness to our app.
+                    but also refine and bring uniqueness to our app. We liked the ideas of the SOS Emergency Alert, 
+                    Location Sharing, and the Tips/Videos. We found that these were core features that needed to be
+                    implemented together in one application.
                 </div>
 
                 <div id="section-title">UI Design</div>
@@ -100,17 +115,36 @@
                     what elements we wanted on our screens and refined that to our Final.</div>
                 <div id="italic-heading">Mockup</div>
                 <img src="images/sow_mockup.png" alt="save our women" style="width:100%" id="info-pic">
+
+                <div id="section-paragraph">
+                    Our mockups consisted of several inconsistencies with the home button, navigation bar, and settings 
+                    button. Throuhgout our project timeline, we evolved our this into our Final design by deciding what we
+                    minimally needed in our app and how to implement it as minimalistically and simple as possible - because
+                    someone using the app may not have the time to dig through to find the SOS button in a dangerous
+                    situation.
+                </div>
+                <br>
+
                 <div id="italic-heading">Final</div>
                 <img src="images/sow_final.png" alt="save our women" style="width:100%" id="info-pic">
 
+
                 <div id="section-title">Programming</div>
-                <div id="section-paragraph">For our front end, we used React Native and Google Places and Maps API. We
-                    connected the front and back end through Axios.<br><br>
-                    I focused more on the back end, leveraging Python Flask as our back end server and Google Firebase
+                <div id="section-paragraph">For our front end, we used <b>React Native</b> and <b>Google Places and Maps API</b>. We
+                    connected the front and back end through <b>Axios</b>.<br><br>
+                    I focused more on the back end, leveraging <b>Python Flask</b> as our back end server and <b>Google Firebase</b>
                     as our database and authentication. I further implemented the Emergency
-                    SOS contact messaging through Twilio API and built Docker containers to allow front end to run the
-                    back end.
+                    SOS contact messaging through <b>Twilio API</b> and built <b>Docker</b> containers to allow front end to run the
+                    back end. To test my back end functionalities, I utilized <b>Postman</b> to parse my <b>JSON</b> strings, 
+                    <b>HTML</b>, <b>Javascript</b> and <b>Google Places and Maps API</b> to test the basic layout. 
                 </div>
+
+                <div id="section-title">Walkthrough</div>
+                <div id="section-paragraph">
+                    Below is a video demonstrating a simple walkthrough of our application and its key features:
+                </div>
+                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/aJXaAHHZl7A" style="margin-top: 1%;">
+                </iframe>
 
                 <div id="section-title">Challenges we faced</div>
                 <div id="section-paragraph">Originally, we intended to use Google Maps and Places API in the back end
@@ -134,7 +168,7 @@
                 <div id="section-paragraph">
                     <ul>
                         <li><a href="https://polarisproject.org/2019-us-national-human-trafficking-hotline-statistics/"
-                                target="_blank" style="color:#0645AD">
+                                target="_blank" style="color:#0645AD" id="hyperlink-sow">
                                 https://polarisproject.org/2019-us-national-human-trafficking-hotline-statistics/</a>
                         </li>
                     </ul>
