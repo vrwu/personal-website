@@ -61,11 +61,11 @@ body {
     padding-top: 10%;
 }
 
-#section-title {
+#category-title {
     font-size: 300%
 }
 
-.section-container {
+.category-container {
     display: flex;
     justify-content: space-between;
     text-align: center;
