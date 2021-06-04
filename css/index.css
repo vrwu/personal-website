@@ -60,14 +60,19 @@ body {
 #projects {
     padding-top: 10%;
 }
-#projects-title {
+
+#section-title {
     font-size: 300%
 }
 
-.projects-container {
+.section-container {
     display: flex;
     justify-content: space-between;
     text-align: center;
+}
+
+#experience {
+    padding-top: 10%;
 }
 
 .card {
