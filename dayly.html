@@ -6,22 +6,40 @@
     <title>day.ly</title>
     <link href="css/case-studies.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-16x16.png">
 </head>
 
 <body>
     <div>
         <div class="topnav">
-            <a href="#random">random</a>
-            <a href="#projects">projects</a>
-            <a href="#experience">experience</a>
-            <a href="#about">about me</a>
-            <a href="https://vrwu.github.io/" style="float:left">home</a>
+            <a href="#random" id="hyperlink-nav" style="padding-right: 3%;">random</a>
+            <a href="https://vrwu.github.io/#projects" id="hyperlink-nav">projects</a>
+            <a href="#experience" id="hyperlink-nav">experience</a>
+            <a href="https://vrwu.github.io/#about" id="hyperlink-nav">about me</a>
+            <a href="https://vrwu.github.io/" style="float:left; padding-left: 3%;" id="hyperlink-nav">vivian wu</a>
         </div>
         <div class="main-body">
             <div class="body-center">
                 <div id="title">
                     day.ly
                 </div>
+
+                <div id="problem-statement" style="padding-top: 0%";>
+                    SD Hack 2021 Special Category Award
+                </div>
+                <div id="section-paragraph">
+                    <div style="padding-top: 1%;"></div>
+                    <b>Project Date: </b>February 2021
+                    <div style="padding-top: 1%;"></div>
+                    <b>Technologies: </b>React Native, Expo, React Native Paper, Node.js
+                    <div style="padding-top: 1%;"></div>
+                    <b>Role: </b>Front End Developer and Designer
+                    <div style="padding-top: 1%;"></div>
+                    <b>Team: </b> Elias Arghand, Theodore Nguyen, Wesley Wang, Vivian Wu
+
+                    <!-- <a href="https://github.com/vrwu/save-our-women" target="_blank" id="github" style><b><span>View on Github</span></b></a> -->
+                </div>
+                <br>
                 <hr size="10" width="25%%" color="#adccff">
 
                 <div id="problem-statement">With COVID-19 and the transition to online education, students have found it
@@ -77,7 +95,10 @@
                     assignment, distracted by other tabs running or by their phone. They told us that the environment at
                     home was too
                     comfortable and hard to concentrate. This led us to investigate what has currently been done to
-                    alleviate this.<br><br><br>
+                    alleviate this. According to <a href="https://www.focusboosterapp.com/blog/the-science-behind-the-pomodoro-technique/" 
+                    target="_blank" id="hyperlink-dayly"><b>focus booster blog</b></a>, the pomodoro technique enhances
+                    productivity in four core ways:
+                        <br><br><br>
                 </div>
                 <img src="images/info_dayly.png" alt="pomodoro" style="width:75%" id="info-pic">
                 <div id="section-paragraph"> <br> The pomodoro technique, with its allocated work and break time, seems
@@ -92,16 +113,49 @@
                     what elements we wanted on our screens and refined that to our Final.</div>
                 <div id="italic-heading">Mockup</div>
                 <img src="images/dayly_mockup.png" alt="day.ly mockup" style="width:100%" id="info-pic">
+
+                <div id="section-paragraph">
+                    When drafting our Final designs, we found that we wanted to maintain the same elements from our Mockup
+                    so the only problem was choosing a color palette. We decided on blue and purple, as from our Research
+                    in <a href="https://www.focusboosterapp.com/blog/the-science-behind-the-pomodoro-technique/" 
+                    target="_blank" id="hyperlink-dayly"><b>How These Colors Affect Your Productivity</b></a>, the color blue is 
+                    often used to <b>increase calmness and boost productivity</b> by stimulating the mind. It is calm yet mentally stimulating.
+                    The color purple is used to <b>increase the perception of value</b> through heightening mental awareness. It helps
+                    build confidence as purple has often been associated with royalty.<br><br>
+                    We further maintained a simple layout as people who use these types of apps are more likely continue using it if there is 
+                    not too many features or buttons that make it hard to navigate. We overall looked to build something simple yet
+                    useful. 
+                </div>
+                <br>
+
                 <div id="italic-heading">Final</div>
                 <img src="images/dayly_final.png" alt="day.ly final" style="width:100%" id="info-pic">
 
-                <div id="section-title">Programming</div>
-                <div id="section-paragraph">For our technologies, we used React Native, Expo and Redux.<br><br>
-                    I focused more on the front end, leveraging React Native and React Native Paper library to code
-                    various screens of our UI.
-                    I further tested our functionality through syncing with Expo and Node.js.
-                    In the back end, I worked on creating the Pomodoro timer using React Native.
+                <div id="section-title">Screen Descriptions</div>
+                <div id="section-paragraph">
+                    <ul>
+                        <li><i><b>Home</b></i> - After Signing Up or Logging In, directs you to your dayly tasks with subject and time</li> <br>
+                        <li><i><b>Create a Study Session</b></i> - Create study sessions with the subject, start time, pomodoro type, times, and repeating days</li> <br>
+                        <li><i><b>Your Study Sessions</b></i> - View study sessions for the week</li> <br>
+                        <li><i><b>Session Details</b></i> - View a more specific details about a session </li> <br>
+                        <li><i><b>Work Session</b></i> - Interact with the pomodoro timer to start a session and reset if needed</li>
+                    </ul>         
                 </div>
+                <div id="section-title">Programming</div>
+                <div id="section-paragraph">For our technologies, we used <b>React Native</b>, <b>Expo</b> and <b>Redux</b>.<br><br>
+                    I focused more on the front end, leveraging <b>React Native</b> and <b>React Native Paper library</b> to code
+                    various screens of our UI.
+                    I further tested our functionality through syncing with <b>Expo</b> and <b>Node.js</b>.
+                    In the back end, I worked on creating the Pomodoro timer using <b>React Native</b>.
+                </div>
+
+                <div id="section-title">Walkthrough</div>
+                <div id="section-paragraph">
+                    Below is a video demonstrating a simple walkthrough of our application and its key features:
+                </div>
+                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/sfDr0NaLcHA" style="margin-top: 1%;"
+                alt="day.ly demo">
+                </iframe>
 
                 <div id="section-title">Challenges we faced</div>
                 <div id="section-paragraph">Given the remote setting of this hackathon, we found it rather difficult to
@@ -131,9 +185,13 @@
                 <div id="section-paragraph">
                     <ul>
                         <li><a href="https://www.focusboosterapp.com/blog/the-science-behind-the-pomodoro-technique/"
-                                target="_blank" style="color:#0645AD">
-                                https://www.focusboosterapp.com/blog/the-science-behind-the-pomodoro-technique/</a>
+                                target="_blank" id="hyperlink-dayly">
+                                <b>https://www.focusboosterapp.com/blog/the-science-behind-the-pomodoro-technique/</b></a>
                         </li>
+                        <li><a href="https://www.the1thing.com/blog/the-one-thing/how-these-colors-affect-your-productivity/"
+                            target="_blank" id="hyperlink-dayly">
+                            <b>https://www.the1thing.com/blog/the-one-thing/how-these-colors-affect-your-productivity/</b></a>
+                    </li>
                     </ul>
                 </div>
             </div>

@@ -100,6 +100,15 @@ hr {
     color: #a029b3;
 }
 
+#hyperlink-dayly {
+    color: #3fbde0;
+    transition: color .25s
+}
+
+#hyperlink-dayly:hover {
+    color: #2d8ba6
+}
+
 #highest span{
     background-color: #b5ebbe;
 }
