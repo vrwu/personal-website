@@ -1,0 +1,429 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>presidential bias predictor</title>
+    <link href="css/case-studies.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-16x16.png">
+</head>
+
+<body>
+    <div>
+        <div class="topnav">
+            <a href="#random" id="hyperlink-nav" style="padding-right: 3%;">random</a>
+            <a href="https://vrwu.github.io/#projects" id="hyperlink-nav">projects</a>
+            <a href="https://vrwu.github.io/#experience" id="hyperlink-nav">experience</a>
+            <a href="https://vrwu.github.io/#about" id="hyperlink-nav">about me</a>
+            <a href="https://vrwu.github.io/" style="float:left; padding-left: 3%;" id="hyperlink-nav">vivian wu</a>
+        </div>
+        <div class="main-body">
+            <div class="body-center">
+                <div id="title">
+                    presidential bias predictor
+                </div>
+
+                <div id="problem-statement" style="padding-top: 0%";>
+                    Top 5 Course Projects
+                </div>
+                <div id="section-paragraph">
+                    <div style="padding-top: 1%;"></div>
+                    <b>Project Date: </b>December 2020
+                    <div style="padding-top: 1%;"></div>
+                    <b>Technologies: </b>Python, Unofficial TikTok API, Porter Stemmer Algorithm, Gaussian Classifier, Naive Bayes Algorithm, Google Colab
+                    <div style="padding-top: 1%;"></div>
+                    <b>Role: </b>Data Wrangling, Datasets, API Handle
+                    <div style="padding-top: 1%;"></div>
+                    <b>Team: </b> Elias Arghand, Elias Fang, Norman Ta, Wesley Wang, Vivian Wu
+
+                </div>
+                <br>
+                <hr size="10" width="25%%" color="#e2adff">
+                <div id="problem-statement">Can we create a classification model to predict the 2020 presidential bias of politically-focused TikTok videos?
+                </div>
+
+                <div id="section-title">Overview</div>
+                <div id="section-paragraph">TikTok, a social media platform that recently rose to fame around the world, has set the
+                    stage for users to express their political ideologies in short videos with the recent 2020 Presidential Election. We
+                    decided to gather data leveraging various political hashtags to see if we can predict the presidential bias of a
+                    politically-focused TikTok video. 
+                    <br><br>
+                    Through the predictive model, we generated with the data we scraped from the most
+                    popular TikTok videos, we were able to accurately predict the bias of any given TikTok video and also discovered
+                    that TikTok has a predominantly left demographic. The findings of our project has allowed us to better understand
+                    the role of machine learning in predictive analysis and our data can also be used to better understand the biases
+                    that exist in social media content.</div>
+
+                <div id="section-title">Background and Prior Work</div>
+                <div id="section-paragraph">The social media platform known as TIkTok is an app created by ByteDance Ltd. to cultivate
+                    creativity among its users through short videos (known as TikToks) grouped by hashtags and genre. Since its
+                    conception in September 2016, TikTok has risen in popularity around the world, especially among the younger
+                    demographic aged 16-24 [1]. With the recent 2020 election, social media platforms witnessed a surge in
+                    politically-related content. This year's election was the first election for TikTok since its rise to popularity and
+                    so naturally, political TikTok videos consisting of activism and awareness began surfacing among its users [2]. This
+                    makes sense as it is well known that social media has an influence on human beliefs and behaviors.<br><br>
+                
+                    Through personal experience using the TikTok platform, we have seen how the app's system heavily relies on the use
+                    of hashtags. With the influx of political TikTok videos, we observed the specific hashtags that were used by
+                    creators posting these videos. Among these hashtags are election candidate names, party affiliation, and political
+                    ideology. It was interesting to see how we could anticipate the content of the video based on the hashtags being
+                    used. This was more difficult, however, when hashtags reflecting multiple parties were used. This led us to ask
+                    whether or not there was a way to accurately predict the content of TikTok videos based on their hashtags and video
+                    descriptions. With the presidential election overlapping a large section of the Fall 2020 quarter, we sought to
+                    answer this question more directly, as it pertained to that election. The more specific question we sought to answer
+                    was if the hashtag frequency, likes, view count, and other TikTok metrics could be used to predict the presidential
+                    bias of a TikTok during the election.<br><br>
+                
+                    One past study we found on TikTok in the context of the election focused on TikTok's algorithm for suggesting
+                    content to its users. Jack Bandy, a PhD student studying AI, ethics, and media, discovered that unlike other
+                    platforms, which rely on "friends" and "followers" to suggest relevant content, TikTok's suggestion algorithm
+                    focuses primarily on popular videos chosen by all of its users [3]. With this in mind, we know that the popular
+                    political videos we are analyzing truly are popular among the primary user demographic of the platform.
+                
+                    TikTok has no official API available for use to use, so to retrieve the necessary data to answer our research
+                    question, we use an Unofficial TikTok API developed by David Teather, a Computer Science student from Wisconsin [4].
+                    With this, we are able to find the most popular TikTok videos related to the 2020 election and analyze their
+                    hashtags and descriptions. <br><br>
+                    References:
+                    <ul>
+                    <li>[1] <a href="https://www.businessofapps.com/data/tik-tok-statistics/#:~:text=TikTok%20demographics,and%2025%2D34%20year%20olds"
+                        target="_blank" id="hyperlink-dayly">https://www.businessofapps.com/data/tik-tok-statistics/#:~:text=TikTok%20demographics,and%2025%2D34%20year%20olds</a></li>
+                    <li>[2] <a href="https://www.vogue.com/article/tiktok-activism-president-trump-rally"
+                        target="_blank" id="hyperlink-dayly">https://www.vogue.com/article/tiktok-activism-president-trump-rally</a></li>
+                    <li>[3] <a href="https://towardsdatascience.com/new-study-on-tiktoks-algorithms-and-trump-s-tulsa-rally-508ffb2a5ac5"
+                        target="_blank" id="hyperlink-dayly">https://towardsdatascience.com/new-study-on-tiktoks-algorithms-and-trump-s-tulsa-rally-508ffb2a5ac5</a></li>
+                    <li>[4] <a href="https://github.com/davidteather/TikTok-Api"
+                        target="_blank" id="hyperlink-dayly">https://github.com/davidteather/TikTok-Api</a></li>
+                    </ul>
+                </div>
+
+                <div id="section-title">Hypothesis</div>
+                <div id="section-paragraph">We hypothesize that data fields of a TikTok, such as hashtags, descriptions, likes, and play
+                    counts will greatly contribute to the sentiment of a TiKTok, allowing us to use those data fields in order to
+                    generate a predictive model that uses data on hashtags in order to find the presidential bias of a given TikTok. We
+                    believe that with this data, we will be able to leverage Machine Learning models such as the <b>Gaussian Naive Bayes
+                    model</b> in order to predict whether or not the sentiment of the TikTok is Trump- or Biden-leaning relative to the 2020
+                    Presidential Election. Note that the predictive model training is based on data surrounding presidential candidates
+                    as the metric for left and right leaning TikToks, so the data is more specific to the presidential election.
+                
+                    A potential source of inaccuracy could come from the fact that the sentiment of a hashtag may not represent the
+                    sentiment of the TikTok, as hashtags relate more directly to the topic rather than the sentiment on that topic.
+                </div>
+
+                <div id="section-title">Dataset(s)</div>
+                <div id="section-paragraph">
+                    For our datasets, we leveraged David Teather's Unofficial TikTok API, specifically the functionality to grab TikToks
+                    based on a given hashtag. All of the TikToks we pull are from TikTok's official application. Given a number of
+                    observations x, the API will pull the top x amount of TikToks of a hashtag and automatically sort them by like count in
+                    descending order. <br><br>
+                    Dataset 1:
+                    <ul>
+                        <li>Name: trump2020.json</li>
+                        <li>Link: <a
+                                href="https://raw.githubusercontent.com/COGS108/group030_fa20/master/data/trump2020.json?token=ANFVA7U6ERSAEKTRHLRCRSC74QEJC"
+                                target="_blank"
+                                id="hyperlink-dayly">https://raw.githubusercontent.com/COGS108/group030_fa20/master/data/trump2020.json?token=ANFVA7U6ERSAEKTRHLRCRSC74QEJC</a>
+                        </li>
+                        <li>Number of Observations: 1000</li>
+                        <li>Description: </li>
+                    </ul>
+                    
+                    Dataset 2:
+                    <ul>
+                        <li>Name: trump2020.json</li>
+                        <li>Link: <a
+                                href="https://raw.githubusercontent.com/COGS108/group030_fa20/master/data/biden2020.json?token=ANFVA7W5WO35OOUD6CHKKKS74QECK"
+                                target="_blank"
+                                id="hyperlink-dayly">https://raw.githubusercontent.com/COGS108/group030_fa20/master/data/biden2020.json?token=ANFVA7W5WO35OOUD6CHKKKS74QECK</a>
+                        </li>
+                        <li>Number of Observations: 1000</li>
+                        <li>Description: This dataset includes the json file format of videos with the hashtag trump2020, video
+                            descriptions, other hashtags, like count, play count, and soundtrack. This dataset is used to determine our word
+                            frequencies and is used to determine our shift to a more extreme hashtag.</li>
+                    </ul>
+                    
+                    Dataset 3:
+                    <ul>
+                        <li>Name: trump2020.json</li>
+                        <li>Link: <a
+                                href="https://raw.githubusercontent.com/COGS108/group030_fa20/master/data/bidenharris2020.json?token=ANFVA7X7LCP4BXNLKTAFXLK74QEDM"
+                                target="_blank"
+                                id="hyperlink-dayly">https://raw.githubusercontent.com/COGS108/group030_fa20/master/data/bidenharris2020.json?token=ANFVA7X7LCP4BXNLKTAFXLK74QEDM</a>
+                        </li>
+                        <li>Number of Observations: 1000</li>
+                        <li>Description: This dataset includes the json file format of videos with the hashtag bidenharris, video
+                            descriptions, other hashtags, like count, play count, and soundtrack. This dataset is used to help train our
+                            prediction model as it is more left-leaning/biden supporting.</li>
+                    </ul>
+                    
+                    Dataset 4:
+                    <ul>
+                        <li>Name: trump2020.json</li>
+                        <li>Link: <a
+                                href="https://raw.githubusercontent.com/COGS108/group030_fa20/master/data/trumptrain2020.json?token=ANFVA7XLNGJLSD5R46F4OSK74QENI"
+                                target="_blank"
+                                id="hyperlink-dayly">https://raw.githubusercontent.com/COGS108/group030_fa20/master/data/trumptrain2020.json?token=ANFVA7XLNGJLSD5R46F4OSK74QENI</a>
+                        </li>
+                        <li>Number of Observations: 1000</li>
+                        <li>Description: This dataset includes the json file format of videos with the hashtag trumptrain, video
+                            descriptions, other hashtags, like count, play count, and soundtrack. This dataset is used to help train our
+                            prediction model as it is more right-leaning/trump supporting.</li>
+                    </ul>
+                    
+                    Dataset 5:
+                    <ul>
+                        <li>Name: trump2020.json</li>
+                        <li>Link: <a
+                                href="https://raw.githubusercontent.com/COGS108/group030_fa20/master/data/president.json?token=ANFVA7VDOGZ6KG5AGIE67QS74QEIC"
+                                target="_blank"
+                                id="hyperlink-dayly">https://raw.githubusercontent.com/COGS108/group030_fa20/master/data/president.json?token=ANFVA7VDOGZ6KG5AGIE67QS74QEIC</a>
+                        </li>
+                        <li>Number of Observations: 500</li>
+                        <li>Description: This dataset includes the json file format of videos with the hashtag president, video
+                            descriptions, other hashtags, like count, play count, and soundtrack. This dataset is used to observe word
+                            frequencies and is part of our application. Further, this dataset represents a more middle ground hashtag to
+                            both sides of the presidential bias.</li>
+                    </ul>
+                </div>
+
+
+                <div id="section-title">Setup</div>
+                <div id="section-paragraph">
+                    <code>
+                        import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import string
+import itertools
+import json
+from wordcloud import WordCloud
+from nltk.stem import PorterStemmer
+# Don't display too many rows/cols of DataFrames
+pd.options.display.max_rows = 7
+pd.options.display.max_columns = 8
+
+# Round decimals when displaying DataFrames
+pd.set_option('precision', 2)
+
+import seaborn as sns
+sns.set()
+sns.set_context('talk')
+
+# Import nltk package 
+#   PennTreeBank word tokenizer 
+#   English language stopwords
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from nltk.probability import FreqDist
+from nltk.stem import PorterStemmer
+
+import warnings
+warnings.filterwarnings('ignore')
+
+# scikit-learn imports
+#   SVM (Support Vector Machine) classifer 
+#   Vectorizer, which transforms text data into bag-of-words feature
+#   TF-IDF Vectorizer that first removes widely used words in the dataset and then transforms test data
+#   Metrics functions to evaluate performance
+import re
+from sklearn.svm import SVC
+from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+from nltk.stem.porter import PorterStemmer
+from nltk.corpus import stopwords
+from sklearn.metrics import classification_report, precision_recall_fscore_support
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import confusion_matrix
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn import svm, datasets
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import plot_confusion_matrix
+
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('vader_lexicon')
+stop_words = set(stopwords.words('english'))
+                    </code>
+                </div>
+                <div id="section-title">Solution</div>
+                <div id="section-paragraph"></div>
+                <div id="section-title">Solution</div>
+                <div id="section-paragraph"></div>
+                <div id="section-title">Solution</div>
+                <div id="italic-heading">Save Our Women - a Women's Safety App (iOS)</div>
+                <div id="section-paragraph">Inspired by recent events and increased media presence on women safety, this
+                    iOS app aims to
+                    promote the safety of women through awareness and action. <br><br>
+                    <b>Features:</b> <br>
+                    <ul>
+                        <li><i><b>Emergency SOS Messaging and Location Tracking to Emergency Contacts</b></i> - with the
+                            tap of a button,
+                            send Emergency SOS messages to your Emergency Contacts with your location</li> <br>
+                        <li><i><b>Creation of Incident Reports</b></i> - create reports by pinpointing the location and
+                            description of an incident
+                            and share to others on the platform</li> <br>
+                        <li><i><b>Live Map of Incidents</b></i> - integrated maps with pinpoint locations and incident
+                            hotspots/clusters</li> <br>
+                        <li><i><b>Scenario Based Audios and Tips</b></i> - spread awareness and tips to ensure other
+                            women
+                            are well informed of recent issues and how they can keep themselves safe</li>
+                    </ul>
+                </div>
+
+                <div id="section-title">User Research/Needfinding</div>
+                <img src="images/info.png" alt="save our women trafficking stats" style="width:75%" id="info-pic">
+                <div id="section-paragraph">These statistics derive from the 2019 data report for the 
+                    <a href="https://polarisproject.org/2019-us-national-human-trafficking-hotline-statistics/" 
+                    target="_blank" id="hyperlink-sow"><b>U.S National Human
+                        Trafficking Hotline</b></a>. As we understand that this
+                    does not encompass the entirety of trafficking cases, the large numbers allowed us to judge that
+                    this was an issue that needed to be addressed.<br><br><br>
+                </div>
+                <img src="images/sdawareness.png" alt="save our women sdawareness" style="width:75%" id="info-pic">
+                <div id="section-paragraph"> <br> Further, through investigating local social media pages like 
+                    <a href="https://www.instagram.com/sd_awareness/" target="_blank" id="hyperlink-sow"><b>@sdawareness</b></a> on
+                    Instagram,
+                    we found that there was a lot of attention on the topic but stayed central to just self reflected
+                    stories. This made us want to build an app that encompassed various topics
+                    pertaining to spreading awareness, tips, and safety.
+                </div>
+                <img src="images/apps.jpg" alt="save our women similar apps" style="width:60%" id="info-pic">
+                <div id="section-paragraph"> <br> We also investigated other apps related to safety and found
+                    <a href="https://play.google.com/store/apps/details?id=com.aksharatips.womansafety&hl=en_US&gl=US"
+                        target="_blank" id="hyperlink-sow"><b>Indian SOS Women Safety</b></a>
+                    and <a href="https://apps.apple.com/us/app/sister/id1481562340" target="_blank" id="hyperlink-sow"><b>Sister</b></a>,
+                    both of which had similar features. We used these two apps to draw inspiration from
+                    but also refine and bring uniqueness to our app. We liked the ideas of the SOS Emergency Alert, 
+                    Location Sharing, and the Tips/Videos. We found that these were core features that needed to be
+                    implemented together in one application.
+                </div>
+
+                <div id="section-title">Use Cases</div>
+                <div id="section-paragraph">After deciding on what core functionalities we wanted in our app, we created a chart of
+                    Use Cases that we wanted users to be able to do with our application. We prioritized our use cases with 
+                    <b id="highest"><span>green as highest priority</span></b>, 
+                    <b id="medium"><span>yellow as medium priority</span></b>, 
+                    and <b id="lowest"><span>red as lowest priority</span></b>. 
+                    This allowed us to set goals toward
+                    finishing what is needed minimally. <br><br>
+                    <b><i>Section 1: Login</i></b>
+                    <ul>
+                        <li id="highest"><span>Users should be able to <b>set up an account</b> with the application</span></li> <br>
+                        <li id="highest"><span>Users should be able to <b>log in and log out</b> of their account</span></li> <br>
+                    </ul>
+                    <b><i>Section 2: Homepage</i></b>
+                    <ul>
+                        <li id="highest"><span>Users should be able to <b>access the homepage</b> from the website</span></li> <br>
+                        <li id="highest"><span>User can <b>opt in to push notifications</b> of reported incidents</span></li> <br>
+                        <li id="highest"><span>User can send <b>SOS emergency alerts</b> and emergency contacts are notified</span></li> <br>
+                        <li id="highest"><span>User can <b>report incidents</b> of harassment in the specific area</span></li> <br>
+                        <li id="highest"><span>User can access other sections through a <b>navigation bar</b></span></li> <br>
+                    </ul>
+                    <b><i>Section 3: Audios/Videos</i></b>
+                    <ul>
+                        <li id="highest"><span>Users should be able to <b>play audios/videos</b> on the app</span></li> <br>
+                        <li id="lowest"><span>Users should be able to <b>save favorites</b> on the app</span></li> <br>
+                        <li id="medium"><span>Users should be able to <b>upload audios/videos</b> on the app</span></li> <br>
+                    </ul>
+                    <b><i>Section 4: User Settings</i></b>
+                    <ul>
+                        <li id="highest"><span>User can put down <b>emergency point of contacts</b></span></li> <br>
+                    </ul>
+                    <b><i>Section 4: Miscellaneous</i></b>
+                    <ul>
+                        <li id="medium"><span>User can view <b>tips for how to stay safe</b> + what to do when you run into a certain situation</span></li> <br>
+                    </ul>
+                    <b><i>Section 5: Reviews/Newsfeed</i></b>
+                    <ul>
+                        <li id="medium"><span>User can view <b>safety of areas</b> they’re currently in</span></li> <br>
+                    </ul>
+
+                </div>             
+
+                <div id="section-title">UI Design</div>
+                <div id="section-paragraph">We used <b>Figma</b> to design our app's UI. Starting with the Mockup, we gauged
+                    what elements we wanted on our screens and refined that to our Final.</div>
+                <div id="italic-heading">Mockup</div>
+                <img src="images/sow_mockup.png" alt="save our women mockup" style="width:100%" id="info-pic">
+
+                <div id="section-paragraph">
+                    Our mockups consisted of several inconsistencies with the home button, navigation bar, and settings 
+                    button. Throuhgout our project timeline, we evolved our this into our Final design by deciding what we
+                    minimally needed in our app and how to implement it as minimalistically and simple as possible - because
+                    someone using the app may not have the time to dig through to find the SOS button in a dangerous
+                    situation.
+                </div>
+                <br>
+
+                <div id="italic-heading">Final</div>
+                <img src="images/sow_final.png" alt="save our women final" style="width:100%" id="info-pic">
+
+                <div id="section-title">Screen Descriptions</div>
+                <div id="section-paragraph">
+                    <ul>
+                        <li><i><b>Sign Up/Login</b></i> - Sign Up or Login to the Save Our Women</li> <br>
+                        <li><i><b>Home</b></i> - Home directory, navigate to Newsfeed, Make a Report, or check out the Live Cluster Map</li> <br>
+                        <li><i><b>Make a Report</b></i> - Witness or experience an offense? Create a report with the location, picture (if applicable) 
+                            and a description of what happened to spread awareness</li> <br>
+                        <li><i><b>Newsfeed</b></i> - View other reports of offense</li> <br>
+                        <li><i><b>Tips</b></i> - View the directory of tips and videos on what to do based on certain scenarios</li> <br>
+                        <li><i><b>Emergency Contacts</b></i> - Add your Emergency point of contacts</li> <br>
+                        <li><i><b>Emergency SOS</b></i> - Press the SOS button to send an alert with your current location to your Emergency Contacts!</li>
+
+                    </ul>         
+                </div>
+
+                <div id="section-title">Programming</div>
+                <div id="section-paragraph">For our front end, we used <b>React Native</b> and <b>Google Places and Maps API</b>. We
+                    connected the front and back end through <b>Axios</b>.<br><br>
+                    I focused more on the back end, leveraging <b>Python Flask</b> as our back end server and <b>Google Firebase</b>
+                    as our database and authentication. I further implemented the Emergency
+                    SOS contact messaging through <b>Twilio API</b> and built <b>Docker</b> containers to allow front end to run the
+                    back end. To test my back end functionalities, I utilized <b>Postman</b> to parse my <b>JSON</b> strings, 
+                    <b>HTML</b>, <b>Javascript</b> and <b>Google Places and Maps API</b> to test the basic layout. 
+                </div>
+
+                <div id="section-title">Walkthrough</div>
+                <div id="section-paragraph">
+                    Below is a video demonstrating a simple walkthrough of our application and its key features:
+                </div>
+                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/aJXaAHHZl7A" style="margin-top: 1%;"
+                alt="save our women demo">
+                </iframe>
+
+                <div id="section-title">Challenges we faced</div>
+                <div id="section-paragraph">Originally, we intended to use <b>Google Maps and Places API</b> in the back end
+                    but we found many issues when connecting the front and back end, so we had to move it to be used
+                    in the front end. Further, when we designed the app to be iOS, I was unable to test on my end
+                    due to having a Windows, so I ended up testing the back end functionality without having access to 
+                    the front end and made basic <b>HTML</b> pages to test. 
+                </div>
+
+                <div id="section-title">Reflection</div>
+                <div id="section-paragraph">Throughout this entire process, I learned to build an MVP given a 10 week
+                    timeline. It was also my first time engaging in a project,
+                    so I learned many new technologies such as <b>Flask, Firebase, and REST APIs</b>. Since this was conducted
+                    entirely online due to COVID-19, I found it challenging to
+                    communicate with my teammates, however we were able to tackle this through weekly standups and work
+                    sessions. Possible improvements this project could have
+                    expanded on given more time include more extensive user testing to find bugs in our app.
+                </div>
+
+                <div id="section-title">Sources</div>
+                <div id="section-paragraph">
+                    <ul>
+                        <li><a href="https://polarisproject.org/2019-us-national-human-trafficking-hotline-statistics/"
+                                target="_blank" id="hyperlink-sow">
+                                <b>https://polarisproject.org/2019-us-national-human-trafficking-hotline-statistics/</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

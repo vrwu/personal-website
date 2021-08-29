@@ -125,6 +125,13 @@ hr {
     background-color: #ebd5b5;
 }
 
+code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 5%;
+}
+
 @font-face {
     font-family: 'Montserrat';
     src: url(../fonts/Montserrat-Regular.ttf);
